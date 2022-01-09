@@ -80,7 +80,7 @@ resource "aws_iam_role" "ms-node" {
           "Principal": {
               "Service": "ec2.amazonaws.com"
           },
-          "Action": "sts.AssumeRole"
+          "Action": "sts:AssumeRole"
       }
   ]
 }
