@@ -65,6 +65,11 @@ resource "aws_eks_cluster" "ms-up-running" {
   ]
 }
 
+# for auth token
+data "aws_eks_cluster_auth" "ms-up-running" {
+  name = aws_eks_cluster.ms-up-running.name
+}
+
 # node group IAM
 # node role
 
